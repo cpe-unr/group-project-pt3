@@ -10,9 +10,10 @@
 
 class Processor {
 public:
-	virtual void processBuffer(unsigned char* buffer, int bufferSize) = 0;
-	virtual void processBuffer(signed char* buffer, int bufferSize) = 0;
-
+	virtual void processBuffer8M(unsigned char* buffer, int bufferSize) = 0;
+	virtual void processBuffer8S(unsigned char* buffer, int bufferSize) = 0;
+	virtual void processBuffer16M(signed char* buffer, int bufferSize) = 0;
+	virtual void processBuffer16S(signed char* buffer, int bufferSize) = 0;
 };
 
 #endif 
