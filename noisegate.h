@@ -8,12 +8,14 @@
 
 class NoiseGate : public Processor{
 	uint8_t threshold;
+	int16_t threshold_2;
 public:
-	NoiseGate(uint8_t newThreshold);
+	NoiseGate(uint8_t newThreshold, int16_t newThreshold_2);
 
-	void processBuffer(unsigned char* buffer, int bufferSize) override;
-
-	void processBuffer(signed char* buffer, int bufferSize) override;
+	void processBuffer8M(unsigned char* buffer, int bufferSize) override;
+	void processBuffer8S(unsigned char* buffer, int bufferSize) override;
+	void processBuffer16M(signed char* buffer, int bufferSize) override;
+	void processBuffer16S(signed char* buffer, int bufferSize) override;
 };
 
 #endif
