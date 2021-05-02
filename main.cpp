@@ -1,49 +1,31 @@
-//Group 3 teammates: Caitlin Hibler,
+//Group 3 teammates: Joshua Anderson and Caitlin Hibler
 //Final project
 //Due Date: May 2, 2021
 
 
 /** @file */
-#include <iostream>
+#include "wav.h"
 #include "echo.h"
 #include "noisegate.h"
 #include "normalization.h"
 #include "Processor.h"
+#include <iostream>
+#include <fstream>
+#include <string>
+#include <sstream>
+#include <iterator>
+#include <vector>
 
-/**
- * \brief   The function bar.
- *
- * \details This function does something which is doing nothing. So this text
- *          is totally senseless and you really do not need to read this,
- *          because this text is basically saying nothing.
- *
- * \note    This text shall only show you, how such a \"note\" section
- *          is looking. There is nothing which really needs your notice,
- *          so you do not really need to read this section.
- *
- * \param[in]     a    Description of parameter a.
- * \param[out]    b    Description of the parameter b.
- * \param[in,out] c    Description of the parameter c.
- *
- * \return        The error return code of the function.
- *
- * \retval        ERR_SUCCESS    The function is successfully executed
- * \retval        ERR_FAILURE    An error occurred
- */
-void fn(){
+int main(){
 
-}
-
-int main(int argc, char *argv[]){
-
-    	if(argc != 2){
-                std::cout << "Correct Usage: " << argv[0] << " <filename>" << std::endl;
-        }
-
-        else{
-               std::cout << "EYY you did it!" << std::endl; //tester
-	}
-
+	Wav firstWav;
+	//firstWav.readFile("yes-8-bit-mono.wav");
+	firstWav.readFile("z.wav");
+	firstWav.printMeta();
+	//firstWav.writeFile("z.wav");
+	firstWav.writeFile("zz.wav");
 
     return 0;
+
 }
+
