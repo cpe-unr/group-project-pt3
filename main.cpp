@@ -1,5 +1,14 @@
+//Group 3 teammates: Caitlin Hibler,
+//Final project
+//Due Date: May 2, 2021
+
+
 /** @file */
 #include <iostream>
+#include "echo.h"
+#include "noisegate.h"
+#include "normalization.h"
+#include "Processor.h"
 
 /**
  * \brief   The function bar.
@@ -25,7 +34,16 @@ void fn(){
 
 }
 
-int main() {
-    std::cout << "Hello, World!" << std::endl;
+int main(int argc, char *argv[]){
+
+    	if(argc != 2){
+                std::cout << "Correct Usage: " << argv[0] << " <filename>" << std::endl;
+        }
+
+        else{
+               std::cout << "EYY you did it!" << std::endl; //tester
+	}
+
+
     return 0;
 }
