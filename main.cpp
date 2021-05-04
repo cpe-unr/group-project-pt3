@@ -33,7 +33,7 @@ int main() {
 			tempWav->readFile(file);
 			wavs.push_back(tempWav);
 		}
-		ui.applyLabel("All files read in");
+		ui.applyLabel("All files read in. Ready for use.");
 
 
 	} else {
