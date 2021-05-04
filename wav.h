@@ -34,21 +34,53 @@ private:
 	std::vector<meta_data> metaData;
 	std::vector<std::string> metaContent;
 	unsigned char* buffer = NULL;
+	signed char* buffer2 = NULL;
 	wav_header wavHeader;
 
 	int bufferSize;
 	int channel;
 	short bitDepth; 
 public:
+	/**
+	*This is the method reading from a file.
+	*@param filename - the name of the file we are looking into.
+	*/
 	void readFile(std::string filename);
+	/**
+	*This is the method used to write objects to a file.
+	*@param filename - the name of the file we are looking into.
+	*/
 	void writeFile(std::string filename);
+	/**
+	*This method is an interface of a destructor used to delete an object.
+	*/
 	virtual ~Wav();
 	
+
+	/**
+	*This method is used to print out the metadata.
+	*/
 	void printMeta();
+	/**
+	*This method is used to get the size of the buffer.
+	*/
 	int getBufferSize();
+	/**
+	*This method is used to find if there is one or two channels.
+	*/
 	int getChannel();
+	/**
+	*This method is to get the number of bits in a sample.
+	*/
 	short getBitDepth();
+	/**
+	*This method is used to get the buffer that is being used.
+	*/
 	unsigned char *getBuffer();
+	/**
+	*This method is used to get the buffer that is being used.
+	*/
+	signed char *getBuffer2();
 
 };
 

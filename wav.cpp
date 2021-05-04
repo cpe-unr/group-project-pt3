@@ -33,6 +33,7 @@ void Wav::readFile(std::string fileName) {
 				remainingData -= sizeof(dataLength);
 				bufferSize = dataLength;
 				buffer = new unsigned char[dataLength]; //sets the buffer to correct size
+				buffer2 = new signed char[dataLength];
 				audioFile.read((char*)buffer, dataLength); //reads in audio data
 				
 				remainingData -= dataLength;
@@ -136,6 +137,10 @@ void Wav::printMeta() {
 
 unsigned char *Wav::getBuffer(){
     return buffer;
+}
+
+signed char *Wav::getBuffer2(){
+    return buffer2;
 }
 
 int Wav::getBufferSize() {
