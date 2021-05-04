@@ -82,6 +82,11 @@ public:
 	*/
 	signed char *getBuffer2();
 
+	/** 
+	*Thie method creates the csv data for the wav
+	*/
+	std::string csvOutput();
+
 };
 
 #endif

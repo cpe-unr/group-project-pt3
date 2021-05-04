@@ -1,8 +1,5 @@
-final: main.o wav.o echo.o ui.o noisegate.o Processor.o
-	g++ -std=c++11 -o final main.o wav.o ui.o echo.o noisegate.o Processor.o
-
-main.o: main.cpp wav.h ui.h echo.h normalization.h noisegate.h Processor.h
-	g++ -c -std=c++11 main.cpp
+final: main.cpp wav.o echo.o ui.o noisegate.o Processor.o
+	g++ -std=c++11 -o final main.cpp wav.o ui.o echo.o noisegate.o Processor.o
 
 wav.o: wav.cpp wav.h
 	g++ -c -std=c++11 wav.cpp

@@ -131,7 +131,11 @@ Wav::~Wav() {
 }
 void Wav::printMeta() {
 	for(int i = 0; i < metaData.size(); i++) {
-		std::cout << metaData[i].metaName << ": " << metaContent[i] <<  std::endl;
+		std::string metaN;
+		for(int j = 0; j < 4; j++){
+			metaN += metaData[i].metaName[j];
+		}
+		std::cout << metaN << ": " << metaContent[i] <<  std::endl;
 	} 
 }
 
@@ -151,4 +155,24 @@ int Wav::getChannel() {
 }
 short Wav::getBitDepth() {
 	return bitDepth;
+}
+
+std::string Wav::csvOutput() {
+	std::string output = "";
+	output += std::to_string(wavHeader.audio_format) + ","; //audioFormat
+	output += std::to_string(wavHeader.num_channels) + ","; //channels
+    	output += std::to_string(wavHeader.sample_rate) + ","; //sample rate
+	output += std::to_string(wavHeader.bit_depth) + ","; //bitdepth
+
+	std::string meta = "[";
+	for(int i = 0; i < metaData.size(); i++) {
+		std::string metaN;
+		for(int j = 0; j < 4; j++){
+			metaN += metaData[i].metaName[j];
+		}
+		meta += metaN + ": " + metaContent[i];
+	} 
+	meta += "]";
+	output += meta;
+	return output;
 }
