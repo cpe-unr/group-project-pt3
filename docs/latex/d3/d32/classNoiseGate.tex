@@ -1,0 +1,123 @@
+\hypertarget{classNoiseGate}{}\section{Noise\+Gate Class Reference}
+\label{classNoiseGate}\index{Noise\+Gate@{Noise\+Gate}}
+
+
+{\ttfamily \#include $<$noisegate.\+h$>$}
+
+
+
+Inheritance diagram for Noise\+Gate\+:
+% FIG 0
+
+
+Collaboration diagram for Noise\+Gate\+:
+% FIG 1
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classNoiseGate_aabfeaa9f47cdec0eb5f2d0c481f506a7}{Noise\+Gate} (uint8\+\_\+t new\+Threshold, int16\+\_\+t new\+Threshold\+\_\+2)
+\item 
+void \hyperlink{classNoiseGate_a01d2a4ba032b2b853f19d5f02c998c53}{process\+Buffer8M} (unsigned char $\ast$buffer, int buffer\+Size) override
+\item 
+void \hyperlink{classNoiseGate_a95221bfd9afb4a23bfb0b63122e62f26}{process\+Buffer8S} (unsigned char $\ast$buffer, int buffer\+Size) override
+\item 
+void \hyperlink{classNoiseGate_a56265390315ad1c22571742d50453f36}{process\+Buffer16M} (signed char $\ast$buffer, int buffer\+Size) override
+\item 
+void \hyperlink{classNoiseGate_ad4da7fd52a07d637e24e69475d1ed89f}{process\+Buffer16S} (signed char $\ast$buffer, int buffer\+Size) override
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This is the nosiegate class. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classNoiseGate_aabfeaa9f47cdec0eb5f2d0c481f506a7}\label{classNoiseGate_aabfeaa9f47cdec0eb5f2d0c481f506a7}} 
+\index{Noise\+Gate@{Noise\+Gate}!Noise\+Gate@{Noise\+Gate}}
+\index{Noise\+Gate@{Noise\+Gate}!Noise\+Gate@{Noise\+Gate}}
+\subsubsection{\texorpdfstring{Noise\+Gate()}{NoiseGate()}}
+{\footnotesize\ttfamily Noise\+Gate\+::\+Noise\+Gate (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{new\+Threshold,  }\item[{int16\+\_\+t}]{new\+Threshold\+\_\+2 }\end{DoxyParamCaption})}
+
+This is the \hyperlink{classNoiseGate}{Noise\+Gate} parameterized constructor. 
+\begin{DoxyParams}{Parameters}
+{\em new\+Threshold} & -\/ the new threshold inputs given to the program from the main function. Used for uint8\+\_\+t \\
+\hline
+{\em new\+Threshold\+\_\+2} & -\/ similar to new\+Threshold except it is for the int16\+\_\+t \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classNoiseGate_a56265390315ad1c22571742d50453f36}\label{classNoiseGate_a56265390315ad1c22571742d50453f36}} 
+\index{Noise\+Gate@{Noise\+Gate}!process\+Buffer16M@{process\+Buffer16M}}
+\index{process\+Buffer16M@{process\+Buffer16M}!Noise\+Gate@{Noise\+Gate}}
+\subsubsection{\texorpdfstring{process\+Buffer16\+M()}{processBuffer16M()}}
+{\footnotesize\ttfamily void Noise\+Gate\+::process\+Buffer16M (\begin{DoxyParamCaption}\item[{signed char $\ast$}]{buffer,  }\item[{int}]{buffer\+Size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+This is the Buffer for the 16bit mono. This is overriding the function from the \hyperlink{classProcessor}{Processor} class. 
+\begin{DoxyParams}{Parameters}
+{\em buffer} & -\/ the array we are looking through \\
+\hline
+{\em buffer\+Size} & -\/ the index of array \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classProcessor_ae6494e06d5dfa0e000a809981078b41c}{Processor}.
+
+\mbox{\Hypertarget{classNoiseGate_ad4da7fd52a07d637e24e69475d1ed89f}\label{classNoiseGate_ad4da7fd52a07d637e24e69475d1ed89f}} 
+\index{Noise\+Gate@{Noise\+Gate}!process\+Buffer16S@{process\+Buffer16S}}
+\index{process\+Buffer16S@{process\+Buffer16S}!Noise\+Gate@{Noise\+Gate}}
+\subsubsection{\texorpdfstring{process\+Buffer16\+S()}{processBuffer16S()}}
+{\footnotesize\ttfamily void Noise\+Gate\+::process\+Buffer16S (\begin{DoxyParamCaption}\item[{signed char $\ast$}]{buffer,  }\item[{int}]{buffer\+Size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+This is the Buffer for the 16bit stereo. This is overriding the function from the \hyperlink{classProcessor}{Processor} class. 
+\begin{DoxyParams}{Parameters}
+{\em buffer} & -\/ the array we are looking through \\
+\hline
+{\em buffer\+Size} & -\/ the index of array \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classProcessor_a8e00c52bcb0f38c3707f55fe69351e12}{Processor}.
+
+\mbox{\Hypertarget{classNoiseGate_a01d2a4ba032b2b853f19d5f02c998c53}\label{classNoiseGate_a01d2a4ba032b2b853f19d5f02c998c53}} 
+\index{Noise\+Gate@{Noise\+Gate}!process\+Buffer8M@{process\+Buffer8M}}
+\index{process\+Buffer8M@{process\+Buffer8M}!Noise\+Gate@{Noise\+Gate}}
+\subsubsection{\texorpdfstring{process\+Buffer8\+M()}{processBuffer8M()}}
+{\footnotesize\ttfamily void Noise\+Gate\+::process\+Buffer8M (\begin{DoxyParamCaption}\item[{unsigned char $\ast$}]{buffer,  }\item[{int}]{buffer\+Size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+This is the Buffer for the 8bit mono. This is overriding the function from the \hyperlink{classProcessor}{Processor} class. 
+\begin{DoxyParams}{Parameters}
+{\em buffer} & -\/ the array we are looking through \\
+\hline
+{\em buffer\+Size} & -\/ the index of array \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classProcessor_aa28dc423c5ee21b11d907a7c13ad81c8}{Processor}.
+
+\mbox{\Hypertarget{classNoiseGate_a95221bfd9afb4a23bfb0b63122e62f26}\label{classNoiseGate_a95221bfd9afb4a23bfb0b63122e62f26}} 
+\index{Noise\+Gate@{Noise\+Gate}!process\+Buffer8S@{process\+Buffer8S}}
+\index{process\+Buffer8S@{process\+Buffer8S}!Noise\+Gate@{Noise\+Gate}}
+\subsubsection{\texorpdfstring{process\+Buffer8\+S()}{processBuffer8S()}}
+{\footnotesize\ttfamily void Noise\+Gate\+::process\+Buffer8S (\begin{DoxyParamCaption}\item[{unsigned char $\ast$}]{buffer,  }\item[{int}]{buffer\+Size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+This is the Buffer for the 8bit stereo. This is overriding the function from the \hyperlink{classProcessor}{Processor} class. 
+\begin{DoxyParams}{Parameters}
+{\em buffer} & -\/ the array we are looking through \\
+\hline
+{\em buffer\+Size} & -\/ the index of array \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classProcessor_aa1342ae07ebced7b3232d2badf06dd3a}{Processor}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+noisegate.\+h\item 
+noisegate.\+cpp\end{DoxyCompactItemize}

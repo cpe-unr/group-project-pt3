@@ -1,0 +1,121 @@
+\hypertarget{classEcho}{}\section{Echo Class Reference}
+\label{classEcho}\index{Echo@{Echo}}
+
+
+{\ttfamily \#include $<$echo.\+h$>$}
+
+
+
+Inheritance diagram for Echo\+:
+% FIG 0
+
+
+Collaboration diagram for Echo\+:
+% FIG 1
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classEcho_a28d71de619dda9e6e51567a04bfb60d6}{Echo} (int new\+Delay)
+\item 
+void \hyperlink{classEcho_abf2b0cabd5f8bc31aaf564b87cef659f}{process\+Buffer8M} (unsigned char $\ast$buffer, int buffer\+Size) override
+\item 
+void \hyperlink{classEcho_a97f50641b94e55c8dee0c9c22edf11f1}{process\+Buffer8S} (unsigned char $\ast$buffer, int buffer\+Size) override
+\item 
+void \hyperlink{classEcho_a060205b12368c89d44429f86c67d9e94}{process\+Buffer16M} (signed char $\ast$buffer, int buffer\+Size) override
+\item 
+void \hyperlink{classEcho_ae2bc9996a4c797170be9e8d0f9132bdf}{process\+Buffer16S} (signed char $\ast$buffer, int buffer\+Size) override
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This is the \hyperlink{classEcho}{Echo} class. It inherits from the \hyperlink{classProcessor}{Processor} class. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classEcho_a28d71de619dda9e6e51567a04bfb60d6}\label{classEcho_a28d71de619dda9e6e51567a04bfb60d6}} 
+\index{Echo@{Echo}!Echo@{Echo}}
+\index{Echo@{Echo}!Echo@{Echo}}
+\subsubsection{\texorpdfstring{Echo()}{Echo()}}
+{\footnotesize\ttfamily Echo\+::\+Echo (\begin{DoxyParamCaption}\item[{int}]{new\+Delay }\end{DoxyParamCaption})}
+
+This is the \hyperlink{classEcho}{Echo} parameterized constructor. 
+\begin{DoxyParams}{Parameters}
+{\em new\+Delay} & -\/ the new int for delay once we read through the buffer \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classEcho_a060205b12368c89d44429f86c67d9e94}\label{classEcho_a060205b12368c89d44429f86c67d9e94}} 
+\index{Echo@{Echo}!process\+Buffer16M@{process\+Buffer16M}}
+\index{process\+Buffer16M@{process\+Buffer16M}!Echo@{Echo}}
+\subsubsection{\texorpdfstring{process\+Buffer16\+M()}{processBuffer16M()}}
+{\footnotesize\ttfamily void Echo\+::process\+Buffer16M (\begin{DoxyParamCaption}\item[{signed char $\ast$}]{buffer,  }\item[{int}]{buffer\+Size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+This is the Buffer for the 16bit mono. This is overriding the function from the \hyperlink{classProcessor}{Processor} class. 
+\begin{DoxyParams}{Parameters}
+{\em buffer} & -\/ the array we are looking through \\
+\hline
+{\em buffer\+Size} & -\/ the index of array \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classProcessor_ae6494e06d5dfa0e000a809981078b41c}{Processor}.
+
+\mbox{\Hypertarget{classEcho_ae2bc9996a4c797170be9e8d0f9132bdf}\label{classEcho_ae2bc9996a4c797170be9e8d0f9132bdf}} 
+\index{Echo@{Echo}!process\+Buffer16S@{process\+Buffer16S}}
+\index{process\+Buffer16S@{process\+Buffer16S}!Echo@{Echo}}
+\subsubsection{\texorpdfstring{process\+Buffer16\+S()}{processBuffer16S()}}
+{\footnotesize\ttfamily void Echo\+::process\+Buffer16S (\begin{DoxyParamCaption}\item[{signed char $\ast$}]{buffer,  }\item[{int}]{buffer\+Size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+This is the Buffer for the 16bit stereo. This is overriding the function from the \hyperlink{classProcessor}{Processor} class. 
+\begin{DoxyParams}{Parameters}
+{\em buffer} & -\/ the array we are looking through \\
+\hline
+{\em buffer\+Size} & -\/ the index of array \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classProcessor_a8e00c52bcb0f38c3707f55fe69351e12}{Processor}.
+
+\mbox{\Hypertarget{classEcho_abf2b0cabd5f8bc31aaf564b87cef659f}\label{classEcho_abf2b0cabd5f8bc31aaf564b87cef659f}} 
+\index{Echo@{Echo}!process\+Buffer8M@{process\+Buffer8M}}
+\index{process\+Buffer8M@{process\+Buffer8M}!Echo@{Echo}}
+\subsubsection{\texorpdfstring{process\+Buffer8\+M()}{processBuffer8M()}}
+{\footnotesize\ttfamily void Echo\+::process\+Buffer8M (\begin{DoxyParamCaption}\item[{unsigned char $\ast$}]{buffer,  }\item[{int}]{buffer\+Size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+This is the Buffer for the 8bit mono. This is overriding the function from the \hyperlink{classProcessor}{Processor} class. 
+\begin{DoxyParams}{Parameters}
+{\em buffer} & -\/ the array we are looking through \\
+\hline
+{\em buffer\+Size} & -\/ the index of array \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classProcessor_aa28dc423c5ee21b11d907a7c13ad81c8}{Processor}.
+
+\mbox{\Hypertarget{classEcho_a97f50641b94e55c8dee0c9c22edf11f1}\label{classEcho_a97f50641b94e55c8dee0c9c22edf11f1}} 
+\index{Echo@{Echo}!process\+Buffer8S@{process\+Buffer8S}}
+\index{process\+Buffer8S@{process\+Buffer8S}!Echo@{Echo}}
+\subsubsection{\texorpdfstring{process\+Buffer8\+S()}{processBuffer8S()}}
+{\footnotesize\ttfamily void Echo\+::process\+Buffer8S (\begin{DoxyParamCaption}\item[{unsigned char $\ast$}]{buffer,  }\item[{int}]{buffer\+Size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+This is the Buffer for the 8bit stereo. This is overriding the function from the \hyperlink{classProcessor}{Processor} class. 
+\begin{DoxyParams}{Parameters}
+{\em buffer} & -\/ the array we are looking through \\
+\hline
+{\em buffer\+Size} & -\/ the index of array \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classProcessor_aa1342ae07ebced7b3232d2badf06dd3a}{Processor}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+echo.\+h\item 
+echo.\+cpp\end{DoxyCompactItemize}

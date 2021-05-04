@@ -1,0 +1,100 @@
+\hypertarget{classProcessor}{}\section{Processor Class Reference}
+\label{classProcessor}\index{Processor@{Processor}}
+
+
+{\ttfamily \#include $<$Processor.\+h$>$}
+
+
+
+Inheritance diagram for Processor\+:
+% FIG 0
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{classProcessor_aa28dc423c5ee21b11d907a7c13ad81c8}{process\+Buffer8M} (unsigned char $\ast$buffer, int buffer\+Size)=0
+\item 
+virtual void \hyperlink{classProcessor_aa1342ae07ebced7b3232d2badf06dd3a}{process\+Buffer8S} (unsigned char $\ast$buffer, int buffer\+Size)=0
+\item 
+virtual void \hyperlink{classProcessor_ae6494e06d5dfa0e000a809981078b41c}{process\+Buffer16M} (signed char $\ast$buffer, int buffer\+Size)=0
+\item 
+virtual void \hyperlink{classProcessor_a8e00c52bcb0f38c3707f55fe69351e12}{process\+Buffer16S} (signed char $\ast$buffer, int buffer\+Size)=0
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This is the \hyperlink{classProcessor}{Processor} class. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classProcessor_ae6494e06d5dfa0e000a809981078b41c}\label{classProcessor_ae6494e06d5dfa0e000a809981078b41c}} 
+\index{Processor@{Processor}!process\+Buffer16M@{process\+Buffer16M}}
+\index{process\+Buffer16M@{process\+Buffer16M}!Processor@{Processor}}
+\subsubsection{\texorpdfstring{process\+Buffer16\+M()}{processBuffer16M()}}
+{\footnotesize\ttfamily virtual void Processor\+::process\+Buffer16M (\begin{DoxyParamCaption}\item[{signed char $\ast$}]{buffer,  }\item[{int}]{buffer\+Size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+This is the Buffer for the 16bit mono. This is overriding the function from the \hyperlink{classProcessor}{Processor} class. 
+\begin{DoxyParams}{Parameters}
+{\em buffer} & -\/ the array we are looking through \\
+\hline
+{\em buffer\+Size} & -\/ the index of array \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{classNoiseGate_a56265390315ad1c22571742d50453f36}{Noise\+Gate}, and \hyperlink{classEcho_a060205b12368c89d44429f86c67d9e94}{Echo}.
+
+\mbox{\Hypertarget{classProcessor_a8e00c52bcb0f38c3707f55fe69351e12}\label{classProcessor_a8e00c52bcb0f38c3707f55fe69351e12}} 
+\index{Processor@{Processor}!process\+Buffer16S@{process\+Buffer16S}}
+\index{process\+Buffer16S@{process\+Buffer16S}!Processor@{Processor}}
+\subsubsection{\texorpdfstring{process\+Buffer16\+S()}{processBuffer16S()}}
+{\footnotesize\ttfamily virtual void Processor\+::process\+Buffer16S (\begin{DoxyParamCaption}\item[{signed char $\ast$}]{buffer,  }\item[{int}]{buffer\+Size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+This is the Buffer for the 16bit stereo. This is overriding the function from the \hyperlink{classProcessor}{Processor} class. 
+\begin{DoxyParams}{Parameters}
+{\em buffer} & -\/ the array we are looking through \\
+\hline
+{\em buffer\+Size} & -\/ the index of array \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{classNoiseGate_ad4da7fd52a07d637e24e69475d1ed89f}{Noise\+Gate}, and \hyperlink{classEcho_ae2bc9996a4c797170be9e8d0f9132bdf}{Echo}.
+
+\mbox{\Hypertarget{classProcessor_aa28dc423c5ee21b11d907a7c13ad81c8}\label{classProcessor_aa28dc423c5ee21b11d907a7c13ad81c8}} 
+\index{Processor@{Processor}!process\+Buffer8M@{process\+Buffer8M}}
+\index{process\+Buffer8M@{process\+Buffer8M}!Processor@{Processor}}
+\subsubsection{\texorpdfstring{process\+Buffer8\+M()}{processBuffer8M()}}
+{\footnotesize\ttfamily virtual void Processor\+::process\+Buffer8M (\begin{DoxyParamCaption}\item[{unsigned char $\ast$}]{buffer,  }\item[{int}]{buffer\+Size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+This is the Buffer for the 8bit mono. This is overriding the function from the \hyperlink{classProcessor}{Processor} class. 
+\begin{DoxyParams}{Parameters}
+{\em buffer} & -\/ the array we are looking through \\
+\hline
+{\em buffer\+Size} & -\/ the index of array \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{classNoiseGate_a01d2a4ba032b2b853f19d5f02c998c53}{Noise\+Gate}, and \hyperlink{classEcho_abf2b0cabd5f8bc31aaf564b87cef659f}{Echo}.
+
+\mbox{\Hypertarget{classProcessor_aa1342ae07ebced7b3232d2badf06dd3a}\label{classProcessor_aa1342ae07ebced7b3232d2badf06dd3a}} 
+\index{Processor@{Processor}!process\+Buffer8S@{process\+Buffer8S}}
+\index{process\+Buffer8S@{process\+Buffer8S}!Processor@{Processor}}
+\subsubsection{\texorpdfstring{process\+Buffer8\+S()}{processBuffer8S()}}
+{\footnotesize\ttfamily virtual void Processor\+::process\+Buffer8S (\begin{DoxyParamCaption}\item[{unsigned char $\ast$}]{buffer,  }\item[{int}]{buffer\+Size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+This is the Buffer for the 8bit stereo. This is overriding the function from the \hyperlink{classProcessor}{Processor} class. 
+\begin{DoxyParams}{Parameters}
+{\em buffer} & -\/ the array we are looking through \\
+\hline
+{\em buffer\+Size} & -\/ the index of array \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{classNoiseGate_a95221bfd9afb4a23bfb0b63122e62f26}{Noise\+Gate}, and \hyperlink{classEcho_a97f50641b94e55c8dee0c9c22edf11f1}{Echo}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Processor.\+h\end{DoxyCompactItemize}
